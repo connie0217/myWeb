@@ -4,7 +4,7 @@ var app = express();
 app.get('/index', function (req, res) {
     res.sendFile( __dirname + "/" + "index.html" );
  })
- var server= app.listen(8082,() => {
+ var server= app.listen(8082,'104.224.153.26',() => {
     var port = server.address().port;
     var host = server.address().address;
     console.log('host', host)
